@@ -1,0 +1,71 @@
+/* Подключение шрифтов с различными весами и стилями */
+@font-face {
+    font-family: 'Bodoni Moda';
+    src: url('../assets/fonts/bodoni-moda/bodoni.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: 
+         url('../assets/fonts/raleway/Raleway-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: 
+         url('../assets/fonts/raleway/Raleway-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: 
+         url('../assets/fonts/raleway/Raleway-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: 
+         url('../assets/fonts/raleway/Raleway-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: 
+         url('../assets/fonts/raleway/Raleway-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: 
+         url('../assets/fonts/mulish/Mulish-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: 
+         url('../assets/fonts/mulish/Mulish-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mulish Italic';
+    src:
+         url('../assets/fonts/mulish/Mulish-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статьи</title>
+    <link rel="stylesheet" href="../../public/styles/reset.css">
+    <link rel="stylesheet" href="../../public/styles/main_new.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="./blog.html">
+                    <div class="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="176" height="34" viewBox="0 0 176 34" fill="none">
+                            <path d="M159.03 16.9573V16.8709H164.279C165.398 16.8709 166.349 16.6176 167.13 16.1109C167.912 15.6042 168.506 14.8903 168.915 13.969C169.323 13.0478 169.527 11.9595 169.527 10.7043C169.527 9.44913 169.323 8.34939 168.915 7.40511C168.506 6.46083 167.906 5.72383 167.113 5.19412C166.331 4.6644 165.387 4.39954 164.279 4.39954H152.732V4.2959H164.279C166.04 4.2959 167.573 4.52045 168.88 4.96956C170.198 5.40716 171.218 6.09809 171.941 7.04237C172.664 7.98665 173.026 9.2073 173.026 10.7043C173.026 12.2014 172.688 13.4105 172.011 14.3318C171.335 15.2415 170.343 15.9094 169.037 16.3355C167.743 16.75 166.156 16.9573 164.279 16.9573H159.03ZM152.732 30.206V30.1024H163.754V30.206H152.732ZM156.564 30.1542V4.36499H159.905V30.1542H156.564ZM172.851 30.3787C171.836 30.3787 171.043 30.1945 170.472 29.826C169.912 29.446 169.504 28.9393 169.247 28.3059C168.99 27.6611 168.827 26.9413 168.757 26.1468C168.699 25.3522 168.664 24.5288 168.652 23.6767C168.641 22.8245 168.594 22.0011 168.512 21.2066C168.431 20.412 168.25 19.698 167.97 19.0647C167.69 18.4198 167.241 17.9131 166.623 17.5446C166.016 17.1646 165.177 16.9746 164.104 16.9746H159.03V16.8882H164.803C166.506 16.8882 167.859 17.13 168.862 17.6137C169.877 18.0858 170.629 18.7192 171.119 19.5138C171.62 20.2968 171.953 21.1605 172.116 22.1048C172.279 23.0491 172.361 23.9991 172.361 24.9549C172.373 25.8992 172.39 26.7628 172.414 27.5459C172.448 28.329 172.577 28.9623 172.798 29.446C173.02 29.9296 173.434 30.1715 174.04 30.1715C174.414 30.1715 174.764 30.1312 175.09 30.0506C175.417 29.9699 175.702 29.8721 175.947 29.7569L176 29.826C175.72 29.9757 175.312 30.1024 174.775 30.206C174.25 30.3212 173.609 30.3787 172.851 30.3787Z" fill="black"/>
+                            <path d="M140.021 30.206V30.1024H143.853V4.39954H140.021V4.2959H151.393V4.39954H147.194V30.1024H151.393V30.206H140.021Z" fill="black"/>
+                            <path d="M120.524 21.8276V21.7239H131.668V21.8276H120.524ZM126.927 3.77686L136.164 30.1015H138.666V30.2052H128.519V30.1015H132.333L125.283 8.50977L117.638 30.1015H121.854V30.2052H114.156V30.1015H117.515L126.805 3.77686H126.927Z" fill="black"/>
+                            <path d="M112.816 4.2959V4.39954H109.65V30.1024H112.816V30.206H102.844V30.1024H106.343V17.4755H94.7971V30.1024H98.296V30.206H88.3242V30.1024H91.4557V4.39954H88.3242V4.2959H98.296V4.39954H94.7971V17.3719H106.343V4.39954H102.844V4.2959H112.816Z" fill="black"/>
+                            <path d="M67.8574 30.206V30.1024H70.9889V4.39954H67.8574V4.2959H86.2264V11.378H86.1215C86.1215 10.1458 85.9174 9.00002 85.5092 7.94059C85.1126 6.88115 84.4828 6.029 83.6198 5.38413C82.7567 4.72774 81.6429 4.39954 80.2784 4.39954H74.3303V30.1024H79.911C81.5205 30.1024 82.8034 29.7684 83.7597 29.1005C84.7161 28.4326 85.4042 27.5229 85.8241 26.3713C86.2556 25.2082 86.4714 23.8955 86.4714 22.433H86.5938V30.206H67.8574ZM80.1734 20.602C80.1734 19.8305 79.9985 19.1683 79.6486 18.6156C79.3104 18.0513 78.8555 17.6195 78.284 17.3201C77.7125 17.0091 77.0944 16.8537 76.4296 16.8537H72.9658V16.75H76.4296C77.0944 16.75 77.7125 16.6118 78.284 16.3355C78.8555 16.0591 79.3104 15.656 79.6486 15.1263C79.9985 14.5966 80.1734 13.946 80.1734 13.1744H80.2959V20.602H80.1734Z" fill="black"/>
+                            <path d="M45.7661 4.2959V30.1024H49.9997V30.206H42.1973V30.1024H45.6611V4.39954H42.1973V4.2959H45.7661ZM66.5318 4.2959V4.39954H62.858V30.5515H62.7356L45.7136 4.2959H49.7198L62.7356 24.9549V4.39954H58.5544V4.2959H66.5318Z" fill="black"/>
+                            <path d="M29.4863 30.206V30.1024H33.3176V4.39954H29.4863V4.2959H40.8576V4.39954H36.659V30.1024H40.8576V30.206H29.4863Z" fill="black"/>
+                            <path d="M7.39501 4.2959V30.1024H11.6286V30.206H3.82617V30.1024H7.29004V4.39954H3.82617V4.2959H7.39501ZM28.1607 4.2959V4.39954H24.4869V30.5515H24.3645L7.34253 4.2959H11.3487L24.3645 24.9549V4.39954H20.1833V4.2959H28.1607Z" fill="black"/>
+                            
+                            </svg>
+                    </div>
+                </a>
+                <div class="nav-links-wrapper">
+                    <ul class="nav-links">
+                        <li><a href="./blog.html" data-key="blog">БЛОГ</a></li>
+                        <li><a href="./about.html" data-key="about">О НАС</a></li>
+                        <li><a href="./archive.html" data-key="archive">АРХИВ</a></li>
+                        <li><a href="./contacts.html" data-key="contacts">КОНТАКТЫ</a></li>
+                        <li class="language-dropdown">
+                            <a href="#" class="language-button">RU <img src="../../public/assets/images/arrow_down_black.svg" alt=""></a>
+                            <ul class="dropdown-content">
+                                <li><a href="#" data-lang="en">EN</a></li>
+                                <li><a href="#" data-lang="ru">RU</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="nav-link-search-btn">
+                        <div class="search-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <mask id="mask0_325_2086" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                                <rect width="24" height="24" fill="#D9D9D9"/>
+                                </mask>
+                                <g mask="url(#mask0_325_2086)">
+                                <path d="M19.6 21L13.3 14.7C12.8 15.1 12.225 15.4167 11.575 15.65C10.925 15.8833 10.2333 16 9.5 16C7.68333 16 6.14583 15.3708 4.8875 14.1125C3.62917 12.8542 3 11.3167 3 9.5C3 7.68333 3.62917 6.14583 4.8875 4.8875C6.14583 3.62917 7.68333 3 9.5 3C11.3167 3 12.8542 3.62917 14.1125 4.8875C15.3708 6.14583 16 7.68333 16 9.5C16 10.2333 15.8833 10.925 15.65 11.575C15.4167 12.225 15.1 12.8 14.7 13.3L21 19.6L19.6 21ZM9.5 14C10.75 14 11.8125 13.5625 12.6875 12.6875C13.5625 11.8125 14 10.75 14 9.5C14 8.25 13.5625 7.1875 12.6875 6.3125C11.8125 5.4375 10.75 5 9.5 5C8.25 5 7.1875 5.4375 6.3125 6.3125C5.4375 7.1875 5 8.25 5 9.5C5 10.75 5.4375 11.8125 6.3125 12.6875C7.1875 13.5625 8.25 14 9.5 14Z" fill="#333333"/>
+                                </g>
+                                </svg>
+                        </div>
+                        
+                        <input type="text" class="search-input" placeholder="Введите запрос">
+                        
+                    </div>
+                    <div class="close-btn-search">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="burger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </nav>
+            
+        </div>
+    </header>
+    <main>
+        <div class="overlay-body"></div>
+
+        <section class="all_publications">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item regular-h4-raleway"><a href="./blog.html">Блог</a></li>
+                        <li class="breadcrumb-item active regular-h4-raleway" aria-current="page">статьи</li>
+                    </ol>
+                </nav>
+                <div class="blog-header">
+                    <h1>статьи</h1>
+                </div>
+                <div class="publications-navmenu">
+                    <div class="publications-navmenu-list">
+                        <div class="publications-navmenu-item regular-h3-bodoni">
+                            актуальное
+                        </div>
+                        <div class="publications-navmenu-item regular-h3-bodoni">
+                            советы и рекомендации
+                        </div>
+                        <div class="publications-navmenu-item regular-h3-bodoni">
+                            эмоциональные барьеры
+                        </div>
+                        <div class="publications-navmenu-item regular-h3-bodoni">
+                            новости
+                        </div>
+                    </div>
+                    <div class="publications-navmenu-sort-wrapper">
+                        <div class="publications-navmenu-sort-main">
+                            <div class="regular-h3-raleway">
+                                Самые последние
+                            </div>
+                            <img src="../../public/assets/images/arrow_down_grey.svg" alt="">
+                        </div>
+                        <!-- Дропдаун -->
+                        <div class="dropdown-menu">
+                            <div class="dropdown-item">Самые последние</div>
+                            <div class="dropdown-item">Популярные</div>
+                            <div class="dropdown-item">По рейтингу</div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="blog-cards-list wrap">
+                    <div class="blog-card-item standart">
+                        <div class="blog-card-img">
+                            <img src="../../public/assets/images/img/square.png" alt="">
+                        </div>
+                        <div class="blog-card-date">
+                            22.05.2024
+                        </div>
+                        <div class="blog-card-info">
+                            <div class="blog-card-title">
+                                <h3>Голографическая краска для волос, меняющая цвет</h3>
+                            </div>
+                            <div class="blog-card-description">
+                                <h4>
+                                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста 
+                                </h4>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-default btn-black">ЧИТАТЬ <img src="../../public/assets/images/btn-arrow-black.svg" alt="" class="icon"></a>
+                    </div>
+                    <div class="blog-card-item standart">
+                        <div class="blog-card-img">
+                            <img src="../../public/assets/images/img/square-1.png" alt="">
+                        </div>
+                        <div class="blog-card-date">
+                            22.05.2024
+                        </div>
+                        <div class="blog-card-info">
+                            <div class="blog-card-title">
+                                <h3>Голографическая краска для волос, меняющая цвет</h3>
+                            </div>
+                            <div class="blog-card-description">
+                                <h4>
+                                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста 
+                                </h4>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-default btn-black">ЧИТАТЬ <img src="../../public/assets/images/btn-arrow-black.svg" alt="" class="icon"></a>
+                    </div>
+                    <div class="blog-card-item standart">
+                        <div class="blog-card-img">
+                            <img src="../../public/assets/images/img/square-2.png" alt="">
+                        </div>
+                        <div class="blog-card-date">
+                            22.05.2024
+                        </div>
+                        <div class="blog-card-info">
+                            <div class="blog-card-title">
+                                <h3>Голографическая краска для волос, меняющая цвет</h3>
+                            </div>
+                            <div class="blog-card-description">
+                                <h4>
+                                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста 
+                                </h4>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-default btn-black">ЧИТАТЬ <img src="../../public/assets/images/btn-arrow-black.svg" alt="" class="icon"></a>
+                    </div>
+                    <div class="blog-card-item standart">
+                        <div class="blog-card-img">
+                            <img src="../../public/assets/images/img/square.png" alt="">
+                        </div>
+                        <div class="blog-card-date">
+                            22.05.2024
+                        </div>
+                        <div class="blog-card-info">
+                            <div class="blog-card-title">
+                                <h3>Голографическая краска для волос, меняющая цвет</h3>
+                            </div>
+                            <div class="blog-card-description">
+                                <h4>
+                                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста 
+                                </h4>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-default btn-black">ЧИТАТЬ <img src="../../public/assets/images/btn-arrow-black.svg" alt="" class="icon"></a>
+                    </div>
+                    <div class="blog-card-item standart">
+                        <div class="blog-card-img">
+                            <img src="../../public/assets/images/img/square-1.png" alt="">
+                        </div>
+                        <div class="blog-card-date">
+                            22.05.2024
+                        </div>
+                        <div class="blog-card-info">
+                            <div class="blog-card-title">
+                                <h3>Голографическая краска для волос, меняющая цвет</h3>
+                            </div>
+                            <div class="blog-card-description">
+                                <h4>
+                                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста 
+                                </h4>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-default btn-black">ЧИТАТЬ <img src="../../public/assets/images/btn-arrow-black.svg" alt="" class="icon"></a>
+                    </div>
+                    <div class="blog-card-item standart">
+                        <div class="blog-card-img">
+                            <img src="../../public/assets/images/img/square.png" alt="">
+                        </div>
+                        <div class="blog-card-date">
+                            22.05.2024
+                        </div>
+                        <div class="blog-card-info">
+                            <div class="blog-card-title">
+                                <h3>Голографическая краска для волос, меняющая цвет</h3>
+                            </div>
+                            <div class="blog-card-description">
+                                <h4>
+                                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста 
+                                </h4>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-default btn-black">ЧИТАТЬ <img src="../../public/assets/images/btn-arrow-black.svg" alt="" class="icon"></a>
+                    </div>
+                    <div class="blog-card-item standart">
+                        <div class="blog-card-img">
+                            <img src="../../public/assets/images/img/square-1.png" alt="">
+                        </div>
+                        <div class="blog-card-date">
+                            22.05.2024
+                        </div>
+                        <div class="blog-card-info">
+                            <div class="blog-card-title">
+                                <h3>Голографическая краска для волос, меняющая цвет</h3>
+                            </div>
+                            <div class="blog-card-description">
+                                <h4>
+                                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста 
+                                </h4>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-default btn-black">ЧИТАТЬ <img src="../../public/assets/images/btn-arrow-black.svg" alt="" class="icon"></a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="pagination">
+                <a href="#" class="prev regular-h3-raleway">Назад</a>
+                <a href="#" class="page regular-h3-raleway active">1</a>
+                <a href="#" class="page regular-h3-raleway">2</a>
+                <a href="#" class="page regular-h3-raleway">3</a>
+                <a href="#" class="page regular-h3-raleway">4</a>
+                <a href="#" class="next regular-h3-raleway">Далее</a>
+              </div>
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <img src="../../public/assets/images/header/logo2.svg" alt="">
+                    </div>
+
+                    <div class="footer-section-main-info">
+                        <div class="footer-section">
+                        
+                            <ul class="nav-links">
+                                <li>О НАС</li>
+                                <li>БЛОГ</li>
+                                <li>АРХИВ</li>
+                                <li>КОНТАКТЫ</li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <ul class="nav-links">
+                                <li>ВОЙТИ</li>
+                                <li>ПОИСК</li>
+                                <li>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</li>
+                                <li>УСЛОВИЯ СОТРУДНИЧЕСТВА</li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h3>КОНТАКТЫ</h3>
+                            <a href="" >+7 967 072 6381</a>
+                            <div class="socials-list">
+                                <a href="#">VIBER</a>
+                                <a href="#">WHATSAPP</a>
+                                <a href="#">INSTAGRAM</a>
+                            </div>
+                            <a href="">lovehair@gmail.com</a>
+                        </div>
+                        <div class="footer-section">
+                            <h3>РЕКВИЗИТЫ</h3>
+                            <ul class="nav-links identic">
+                                <li>ИП ИВАНОВ И.И.</li>
+                                <li>ИНН 081000915032</li>
+                                <li>ОГРН 323080000009218</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Подключение скриптов -->
+    <script src="../../public/scripts/main.js"></script>
+</body>
+</html>

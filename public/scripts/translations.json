@@ -1,0 +1,16 @@
+{
+    "en": {
+        "blog": "BLOG",
+        "about": "ABOUT US",
+        "archive": "ARCHIVE",
+        "contacts": "CONTACTS",
+        "last-events-header-title":"latest events"
+    },
+    "ru": {
+        "blog": "БЛОГ",
+        "about": "О НАС",
+        "archive": "АРХИВ",
+        "contacts": "КОНТАКТЫ",
+        "last-events-header-title":"прошедшие мероприятия"
+    }
+}
