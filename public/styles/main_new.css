@@ -2162,6 +2162,11 @@ button{
   display: none;
 }
 
+.instagram-block-mobile{
+  display: none;
+}
+
+
 @media screen and (max-width: 1440px) {
 
   .line{
@@ -2638,6 +2643,19 @@ button{
 
 @media screen and (max-width: 768px) {
   /* Стили для мобильных устройств */
+
+  .learning_result .feature_item_header_wrapper .title{
+    left: 0px;
+    top: 0px;
+  }
+
+  .insta-btn-mobile{
+    display: flex;
+  }
+
+  .learning_result .feature_item_header_wrapper .title{
+    width: 100%;
+  }
 
   .line{
     width: 20%;
@@ -3723,7 +3741,40 @@ body.no-scroll {
     font-size: 14px;
   }
 
+  .instagram-grid{
+    display: none;
+  }
 
+  .instagram-block-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .insta-row{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .insta-row .insta-post{
+    width: 48%;
+  }
+
+  .insta-row .insta-post img{
+    width: 100%;
+    height: auto;
+  }
+
+  .insta-post.large{
+    width: 100%;
+  }
+
+  .insta-post.large img{
+    width: 100%;
+    height: auto;
+  }
 
 
 }
