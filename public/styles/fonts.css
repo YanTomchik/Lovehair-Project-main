@@ -69,3 +69,35 @@
     font-weight: 400;
     font-style: italic;
 }
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src:
+         url('../assets/fonts/playfairsc/PlayfairDisplaySC-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src:
+         url('../assets/fonts/playfairsc/PlayfairDisplaySC-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src:
+         url('../assets/fonts/playfairsc/PlayfairDisplaySC-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Tilda Sans';
+    src:
+         url('../assets/fonts/tildasans/TildaSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
