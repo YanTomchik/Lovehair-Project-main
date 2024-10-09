@@ -516,7 +516,7 @@ header.white.scrolled .burger div{
   border: none;
   outline: none;
   padding: 0 10px;
-  background-color: #f9f9f9;
+  background-color: #fff;
   font-size: 20px;
   color: #000000;
   transition: width 0.4s ease, opacity 0.4s ease;
@@ -535,7 +535,63 @@ header.white.scrolled .burger div{
 
 /* Скрываем иконку поиска, когда поле активно */
 .search-input.active ~ .search-icon {
-  display: none;
+  /* display: none; */
+  z-index: 3;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+
+.search-icon.active{
+  z-index: 3;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+
+.search-input::placeholder{
+  font-size: 14px;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+}
+
+
+.search-input{
+  font-size: 16px;
+  font-family: 'Raleway';
+  padding-left: 60px;
+}
+
+.search-input-result-container{
+  position: absolute;
+  top: 80px;
+  width: 100%;
+
+}
+
+.search-input-result-list{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #fff;
+  padding: 20px;
+  width: 100%;
+  border-top: 1px solid #c4c4c4;
+  max-height: 400px;
+}
+
+a.search-input-result-item{
+  text-transform: none;
+}
+
+a.search-input-result-item:hover{
+  color:#666666;
+  text-decoration: underline;
+}
+
+.blog-header h3{
+  font-size: 20px;
+  font-family: 'Raleway';
 }
 
 
@@ -2172,6 +2228,8 @@ button{
 .instagram-block-mobile{
   display: none;
 }
+
+
 
 
 @media screen and (max-width: 1440px) {

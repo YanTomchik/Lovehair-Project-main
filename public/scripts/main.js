@@ -1,37 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//   const video = document.getElementById("preloader-video");
-//   const preloader = document.getElementById("preloader");
-//   const mainContent = document.getElementById("main-content");
-
-//   // Функция для скрытия прелоадера и показа основного контента
-//   function hidePreloader() {
-//     preloader.style.display = 'none';  // Скрываем прелоадер
-//     mainContent.style.display = 'block';  // Показываем основной контент
-//     video.pause();  // Останавливаем видео
-//   }
-
-//   // Если страница загружена, сразу скрываем прелоадер
-//   window.onload = function () {
-//     hidePreloader();
-//   };
-
-//   // На случай если видео закончилось до загрузки страницы
-//   video.onended = function () {
-//     hidePreloader();
-//   };
-// });
-
-
-
-// PAGINATION
-const pages = document.querySelectorAll('.pagination .page');
-pages.forEach(page => {
-  page.addEventListener('click', function(e) {
-    e.preventDefault();
-    pages.forEach(p => p.classList.remove('active'));  // Remove active class from all pages
-    this.classList.add('active');  // Add active class to the clicked page
-  });
-});
 
 document.querySelectorAll('.dropdown-content a').forEach(function (option) {
     option.addEventListener('click', function (event) {
@@ -52,44 +18,6 @@ window.addEventListener('scroll', function() {
       header.classList.remove('scrolled');
       header.style.boxShadow = 'none';
   }
-});
-
-// Функция для загрузки JSON с переводами
-async function loadTranslations() {
-  try {
-      const response = await fetch('../../public/scripts/translations.json');
-      const translations = await response.json();
-      return translations;
-  } catch (error) {
-      console.error("Ошибка при загрузке переводов:", error);
-  }
-}
-
-// Функция смены языка
-function changeLanguage(language, translations) {
-  const elements = document.querySelectorAll("[data-key]");
-  elements.forEach((element) => {
-      const key = element.getAttribute("data-key");
-      element.textContent = translations[language][key];
-  });
-}
-
-// Инициализация и смена языка
-document.addEventListener("DOMContentLoaded", async function () {
-  const translations = await loadTranslations();
-
-  // Слушатель для смены языка
-  document.querySelectorAll(".dropdown-content a").forEach((link) => {
-      link.addEventListener("click", function (e) {
-          e.preventDefault();
-          document.querySelector('.language-button').textContent = this.textContent
-          const language = this.getAttribute("data-lang");
-          changeLanguage(language, translations);
-      });
-  });
-
-  // Устанавливаем язык по умолчанию
-  changeLanguage('ru', translations);
 });
 
 const burger = document.querySelector('.burger');
@@ -116,14 +44,15 @@ const searchInput = document.querySelector('.search-input');
 const searchIconClose = document.querySelector('.close-btn-search');
 
 searchIcon.addEventListener('click', () => {
-    searchInput.classList.toggle('active'); // Показываем/скрываем поле поиска
-    searchIcon.classList.toggle('active'); // Изменяем иконку на крестик
-    searchIconClose.classList.toggle('active')
-    if (searchInput.classList.contains('active')) {
-        searchInput.focus(); // Устанавливаем фокус на поле при его открытии
-    } else {
-        searchInput.value = ''; // Очищаем поле при его закрытии
-    }
+  
+  if (searchIcon.classList.contains('active')) {
+      console.log('Переход на страницу поиска')
+  } else {
+      searchInput.classList.add('active');
+      searchIcon.classList.add('active');
+      searchIconClose.classList.add('active');
+      searchInput.focus(); 
+  }
 });
 
 
