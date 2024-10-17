@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #d1e231;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .letter {
+      position: absolute;
+      transition: transform 1s ease-in-out;
+    }
+
+    /* Анимация для движения буквы по этапам */
+    @keyframes moveN {
+      0% {
+        transform: translate(0, 0); 
+      }
+      20% {
+        transform: translate(0, -10vh); 
+        
+      }
+      40% {
+        transform: translate(19vw, -10vh);
+      }
+      80% {
+        transform: translate(-15vw, -48vh); 
+      }
+    }
+
+    @keyframes moveI {
+      0% {
+        transform: translate(0, 0);
+      }
+      20% {
+        transform: translate(0, -10vh); 
+      }
+      40% {
+        transform: translate(19vw, -10vh);
+        
+      }
+      80% {
+        transform: translate(5vw, -48vh); 
+      }
+    }
+    @keyframes moveN2 {
+      0% {
+        transform: translate(0, 0);
+      }
+      20% {
+        transform: translate(0, -10vh); 
+      }
+      40% {
+        transform: translate(19vw, -10vh);
+        
+      }
+      80% {
+        transform: translate(25vw, -48vh); 
+      }
+    }
+    @keyframes moveE {
+      0% {
+        transform: translate(0, 0);
+      }
+      20% {
+        transform: translate(0, -10vh); 
+      }
+      40% {
+        transform: translate(19vw, -10vh);
+        
+      }
+      80% {
+        transform: translate(45vw, -48vh); 
+      }
+    }
+    @keyframes moveH {
+      0% {
+        transform: translate(0, 0);
+      }
+      20% {
+        transform: translate(0, 15vh); 
+      }
+
+      40% {
+        transform: translate(-19vw, 15vh);
+      }
+      80% {
+        transform: translate(-52vw, 35vh); 
+      }
+    }
+    @keyframes moveA {
+      0% {
+        transform: translate(0, 0);
+      }
+      20% {
+        transform: translate(0, 15vh); 
+      }
+      40% {
+        transform: translate(-19vw, 15vh);
+      }
+
+      80% {
+        transform: translate(-32vw, 35vh); 
+      }
+    }
+    @keyframes moveI2 {
+      0% {
+        transform: translate(0, 0);
+      }
+      20% {
+        transform: translate(0, 15vh); 
+      }
+      40% {
+        transform: translate(-19vw, 15vh);
+      }
+      80% {
+        transform: translate(-12vw, 35vh); 
+      }
+    }
+
+    @keyframes moveR {
+      0% {
+        transform: translate(0, 0);
+      }
+      20% {
+        transform: translate(0, 15vh); 
+      }
+      40% {
+        transform: translate(-19vw, 15vh);
+      }
+      80% {
+        transform: translate(10vw, 35vh); 
+      }
+    }
+
+    .n {
+      top: 48%;
+      left: 15%;
+      animation: moveN 6s ease-out ;
+    }
+
+    .i {
+      top: 48%;
+      left: 26%;
+      animation: moveI 6s ease-out ;
+    }
+
+    .n2{
+        top: 48%;
+        left: 32%;
+        animation: moveN2 6s ease-out ;
+    }
+
+    .e{
+        top: 48%;
+        left: 42%;
+        animation: moveE 6s ease-out ;
+    }
+
+    .h{
+        top: 48%;
+        left: 52%;
+        animation: moveH 6s ease-out ;
+    }
+
+    .a{
+        top: 48%;
+        left: 62%;
+        animation: moveA 6s ease-out ;
+    }
+
+    .i2{
+        top: 48%;
+        left: 73%;
+        animation: moveI2 6s ease-out ;
+    }
+
+    .r{
+        top: 48%;
+        left: 79%;
+        animation: moveR 6s ease-out ;
+    }
+
+    @media screen and (max-width: 768px) {
+        svg{
+            width: 80px;
+            height: 90px;
+        }
+
+        .letter.i svg{
+            width: 50px;
+            height: 85px;
+            top: 2px;
+            position: relative;
+        }
+
+        .letter.i2 svg{
+            width: 45px;
+            height: 85px;
+            top: 2px;
+            position: relative;
+        }
+
+        .letter.e svg{
+            width: 80px;
+            height: 85px;
+            top: 2px;
+            position: relative;
+        }
+
+        .letter.r svg{
+            width: 80px;
+            height: 85px;
+            top: 2px;
+            position: relative;
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        svg{
+            width: 40px;
+            height: 50px;
+        }
+
+        .letter.i svg{
+            width: 20px;
+            height: 43px;
+            top: 4px;
+            position: relative;
+        }
+
+        .letter.i2 svg{
+            width: 25px;
+            height: 42px;
+            top: 4px;
+            position: relative;
+        }
+
+        .letter.e svg{
+            width: 40px;
+            height: 41px;
+            top: 4px;
+            position: relative;
+        }
+
+        .letter.r svg{
+            width: 50px;
+            height: 42px;
+            top: 4px;
+            position: relative;
+        }
+    }
+
+  </style>
+  <title>Движение букв</title>
+</head>
+<body>
+  <div class="letter n"><svg xmlns="http://www.w3.org/2000/svg" width="117" height="126" viewBox="0 0 117 126" fill="none">
+    <path d="M17.0178 0V123.242H37.2056V123.737H0V123.242H16.5173V0.494955H0V0H17.0178ZM116.038 0V0.494955H98.5197V125.387H97.9357L16.7675 0H35.8708L97.9357 98.6598V0.494955H77.9982V0H116.038Z" fill="black"/>
+    </svg></div>
+  <div class="letter i"><svg width="55" height="124" viewBox="0 0 55 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0.160156 123.737V123.242H18.4293V0.494955H0.160156V0H54.3835V0.494955H34.3626V123.242H54.3835V123.737H0.160156Z" fill="black"/>
+    </svg>
+    </div>
+  <div class="letter n2"><svg xmlns="http://www.w3.org/2000/svg" width="117" height="126" viewBox="0 0 117 126" fill="none">
+    <path d="M17.0178 0V123.242H37.2056V123.737H0V123.242H16.5173V0.494955H0V0H17.0178ZM116.038 0V0.494955H98.5197V125.387H97.9357L16.7675 0H35.8708L97.9357 98.6598V0.494955H77.9982V0H116.038Z" fill="black"/>
+    </svg></div>
+  <div class="letter e"><svg width="90" height="124" viewBox="0 0 90 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 123.737V123.242H14.9323V0.494955H0V0H87.5916V33.8215H87.091C87.091 27.9371 86.1178 22.4652 84.1713 17.4057C82.2805 12.3462 79.2773 8.27665 75.1619 5.19697C71.0465 2.06229 65.7354 0.494955 59.2286 0.494955H30.8656V123.242H57.4767C65.1514 123.242 71.269 121.647 75.8293 118.458C80.3896 115.268 83.6708 110.924 85.6729 105.424C87.7306 99.8697 88.7594 93.6003 88.7594 86.6161H89.3434V123.737H0ZM58.7281 77.872C58.7281 74.1873 57.8938 71.0252 56.2254 68.3854C54.6126 65.6907 52.4437 63.6284 49.7186 62.1986C46.9936 60.7137 44.0461 59.9713 40.8761 59.9713H24.3588V59.4764H40.8761C44.0461 59.4764 46.9936 58.8164 49.7186 57.4966C52.4437 56.1767 54.6126 54.2519 56.2254 51.7222C57.8938 49.1924 58.7281 46.0852 58.7281 42.4006H59.312V77.872H58.7281Z" fill="black"/>
+    </svg>
+    </div>
+  <div class="letter h"><svg width="117" height="124" viewBox="0 0 117 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M116.789 0V0.494955H101.69V123.242H116.789V123.737H69.2391V123.242H85.9232V62.941H30.8656V123.242H47.5497V123.737H0V123.242H14.9323V0.494955H0V0H47.5497V0.494955H30.8656V62.4461H85.9232V0.494955H69.2391V0H116.789Z" fill="black"/>
+    </svg>
+    </div>
+  <div class="letter a"><svg width="118" height="127" viewBox="0 0 118 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M30.5448 86.2036V85.7087H83.6837V86.2036H30.5448ZM61.0767 0L105.123 125.717H117.052V126.212H68.668V125.717H86.8537L53.2352 22.6027L16.7804 125.717H36.8847V126.212H0.179688V125.717H16.1964L60.4928 0H61.0767Z" fill="black"/>
+    </svg>
+    </div>
+  <div class="letter i2">
+    <svg width="55" height="124" viewBox="0 0 55 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0.160156 123.737V123.242H18.4293V0.494955H0.160156V0H54.3835V0.494955H34.3626V123.242H54.3835V123.737H0.160156Z" fill="black"/>
+    </svg>
+</div>
+  <div class="letter r">
+    <svg width="111" height="125" viewBox="0 0 111 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M30.0314 60.4663V60.0538H55.0575C60.3964 60.0538 64.929 58.8439 68.6551 56.4242C72.3812 54.0044 75.2175 50.5948 77.164 46.1952C79.1105 41.7957 80.0837 36.5987 80.0837 30.6043C80.0837 24.61 79.1105 19.358 77.164 14.8485C75.2175 10.3389 72.3534 6.8193 68.5717 4.28956C64.8456 1.75982 60.3408 0.494955 55.0575 0.494955H0V0H55.0575C63.4552 0 70.7684 1.07239 76.9972 3.21717C83.2815 5.30696 88.1477 8.60661 91.5958 13.1161C95.0438 17.6257 96.7678 23.4551 96.7678 30.6043C96.7678 37.7536 95.155 43.528 91.9294 47.9276C88.7038 52.2721 83.9767 55.4618 77.7479 57.4966C71.5748 59.4764 64.0113 60.4663 55.0575 60.4663H30.0314ZM0 123.737V123.242H52.5549V123.737H0ZM18.269 123.49V0.329973H34.2024V123.49H18.269ZM95.9336 124.562C91.0952 124.562 87.3135 123.682 84.5884 121.922C81.9189 120.108 79.9724 117.688 78.7489 114.663C77.5254 111.583 76.7469 108.146 76.4132 104.352C76.1351 100.557 75.9683 96.625 75.9127 92.5555C75.8571 88.4859 75.6346 84.5538 75.2453 80.7592C74.856 76.9646 73.994 73.5549 72.6592 70.5302C71.3245 67.4505 69.1834 65.0308 66.2359 63.271C63.3439 61.4562 59.3398 60.5488 54.2234 60.5488H30.0314V60.1363H57.5601C65.6797 60.1363 72.1309 61.2912 76.9137 63.6009C81.7521 65.8557 85.3392 68.8804 87.675 72.675C90.0664 76.4146 91.6514 80.5392 92.4299 85.0487C93.2085 89.5583 93.5978 94.0953 93.5978 98.6598C93.6534 103.169 93.7369 107.294 93.8481 111.034C94.015 114.773 94.6267 117.798 95.6834 120.108C96.74 122.417 98.7143 123.572 101.606 123.572C103.386 123.572 105.054 123.38 106.611 122.995C108.169 122.61 109.531 122.142 110.699 121.592L110.949 121.922C109.615 122.637 107.668 123.242 105.11 123.737C102.607 124.287 99.5485 124.562 95.9336 124.562Z" fill="black"/>
+    </svg>
+    </div>
+</body>
+</html>
