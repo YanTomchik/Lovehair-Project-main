@@ -32,17 +32,6 @@ const searchInput = document.getElementById('search-input');
   });
   }
 
-
-document.querySelectorAll('.dropdown-content a').forEach(function (option) {
-    option.addEventListener('click', function (event) {
-        event.preventDefault(); // предотвратить переход по ссылке
-        const selectedLang = event.target.getAttribute('data-lang');
-        // Добавьте свою логику для смены языка здесь
-        console.log('Выбранный язык:', selectedLang);
-    });
-});
-
-
 window.addEventListener('scroll', function() {
   const header = document.getElementsByTagName('header')[0];
   if (window.scrollY > 100) { // Если прокрутка больше 50px
@@ -144,21 +133,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const mainContent = document.getElementById('main-content');
   const letters = document.querySelectorAll('.letter');
 
-  // Ожидание завершения анимации для всех букв
   let animationsFinished = 0;
   letters.forEach(letter => {
     letter.addEventListener('animationend', () => {
       animationsFinished++;
       if (animationsFinished === letters.length) {
-        // Когда все анимации завершены, плавно скрыть лоадер
         videoContainer.style.opacity = 0;
         videoContainer.style.zIndex = -1;
-
-        // Показываем основной контент с плавным появлением
         setTimeout(() => {
-          // videoContainer.style.display = 'none'; 
-          mainContent.style.opacity = 1; // Плавно делаем основной контент видимым
-        }, 500); // Задержка для завершения анимации исчезновения
+          mainContent.style.opacity = 1; 
+        }, 500); 
       }
     });
   });
@@ -173,8 +157,6 @@ const closePopupBtn = document.getElementById('closePopupBtn');
 
 function copyLink(event) {
   const link = event.target.getAttribute('data-link');
-  
-  
   const tempInput = document.createElement('input');
   tempInput.value = link;
   document.body.appendChild(tempInput);
